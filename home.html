@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <style type=text/css>
+    
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("{% static 'images/home.jpg'%}")
+    }
+
+    input[type=submit]{
+        background-color: #4d59ff;
+        border: 2px;
+        color: white;
+        padding: 16px 32px;
+        cursor: pointer;
+        margin-top: 550px;
+    }
+    </style>
+
+</head>
+<body>
+    <div align="center">
+
+        <form action = "predict">
+            <input type="submit" value="GO">
+        </form>
+    </div>
+</body>
+</html>
